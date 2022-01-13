@@ -25,7 +25,7 @@ public class WebFluxConfig implements WebFluxConfigurer
 	public WebClient getWebClient()
 	{
 		return WebClient.builder()
-		        .baseUrl("http://host.docker.internal:3001")
+		        .baseUrl("http://localhost:3001")
 		        .defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
 		        .build();
 	}
